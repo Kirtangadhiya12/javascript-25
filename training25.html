@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title> All HTML Selector</title>
+</head>
+<body>
+    <h1 id="myfirst"> Selecting Best Elements</h1>
+    <div>
+        <ul>
+            <li class="list-item">
+                single element by ID:<code>getElementById() </code>
+            </li>
+            <li class="list-item">
+                single element by CSS selector:<code>querySelector() </code>
+            </li>
+            <li class="list-item">
+                multiple elements by CSS selector:<code>querySelectorAll() </code>
+            </li>
+            <li class="list-item">
+                multiple elements by class:<code>getElementsByClassName</code>
+            </li>
+            <li class="list-item">
+                multiple elements by tag:<code>getElementsByTagName()</code>
+            </li>
+
+        </ul>
+    </div>
+    
+</body>
+<script>
+    const selectId = document.getElementsByTagName("li")
+    console.log("= selectId", selectId)
+    const selectId = document.getElementsByclassName("list-item")
+    console.log("= selectId", selectId)
+    const selectId = document.querySelectorAll("h1")
+    console.log("= selectId", selectId)
+    const selectId = document.querySelector("li")
+    console.log("= selectId", selectId)
+    const selectId = document.getElementById("li")
+    console.log("= selectId", selectId)
+</script>
+</html>
